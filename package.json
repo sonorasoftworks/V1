@@ -2,16 +2,16 @@
   "name": "sonora",
   "version": "1.0.0",
   "description": "",
-  "main": "main/src.mjs",
+  "main": "src.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main/src.js"
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bypass-bare": "file:bare",
+    "bsn": "file:bare",
     "express": "^4.19.2",
     "fetch-behind": "github:SeismeticNetwork/dependecy-2"
   }

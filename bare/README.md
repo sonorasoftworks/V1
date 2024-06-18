@@ -1,8 +1,6 @@
-# TOMP Bare Server bypassed
+# TOMP Bare Server
 
 This repository implements the TompHTTP bare server. See the specification [here](https://github.com/tomphttp/specifications/blob/master/BareServer.md).
-
-No updates from the regular repo just repackaged somewhere else 
 
 ## Upgrading
 
