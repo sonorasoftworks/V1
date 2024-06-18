@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bypass-bare": "file:bare",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "fetch-behind": "github:SeismeticNetwork/dependecy-2"
   }
 }
