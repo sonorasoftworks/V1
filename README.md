@@ -32,7 +32,7 @@ To install Sonora, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/sonorasoftworks/sonora.git
+   git clone https://github.com/sonorasoftworks/V1.git
    cd sonora
    ```
 
