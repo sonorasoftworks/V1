@@ -45,7 +45,9 @@ httpServer.on('upgrade', (req, socket, head) => {
     }
 });
 
-
+app.get('/api/404', (req, res) => {
+    res.json({ string: BareKey });
+  });
 httpServer.listen(PORT, () => {
 const reset = "\x1b[0m";
 const fgBlue = "\x1b[34m";
