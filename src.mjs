@@ -28,6 +28,17 @@ app.use(express.urlencoded({ extended: true }));
 var unblocker = new Unblocker({prefix: '/webinstance/'});
 app.use(unblocker);
 
+const routes = [
+    { path: '/1', file: 'home.html' },
+    { path: '/2', file: 'chat.html' },
+    { path: '/3', file: 'games.html' },
+    { path: '/4', file: 'apps.html' },
+    { path: '/5', file: 'settings.html' },
+    { path: '/safari', file: '/browsers/safari.html' },
+    { path: '/chrome', file: '/browsers/chrome.html' },
+  ];
+
+
 httpServer.on('request', (req, res) => {
     if (bareServer.shouldRoute(req)) {
         bareServer.routeRequest(req, res);
@@ -36,6 +47,11 @@ httpServer.on('request', (req, res) => {
     }
 });
 
+routes.forEach((route) => {
+    app.get(route.path, (req, res) => {
+      res.sendFile(path.join(__dirname, 'frontend', route.file));
+    });
+  });
 
 httpServer.on('upgrade', (req, socket, head) => {
     if (bareServer.shouldRoute(req)) {
